@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar ul li a:hover {
+    color: #ff7043;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #ff7043;
+}
+
+.hero-text p {
+    font-size: 14px;
+    color: #777;
+}
+
+.profile img {
+    width: 220px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.skills-container {
+    display: flex;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.skill {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.skill h3 {
+    font-size: 15px;
+}
+
+.skill p {
+    font-size: 12px;
+}
+
+.project-container {
+    width: 65%;
+    margin: auto;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 15px;
+    min-height: 120px;
+}
+
+.project-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 13px;
+}
+
+form {
+    background-color: white;
+    width: 35%;
+    min-width: 280px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #0056b3;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003d80;
+}
+
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+}
+
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 30px 25px 10px auto;
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+</style>
+</head>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="top">
+        <nav class="navbar">
+            <h2>My Portfolio</h2>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi, I am</h1>
+                <h1 class="highlight">Full Stack Developer</h1>
+                <p>Building modern web applications with MERN stack.</p>
+            </div>
+
+            <div class="profile">
+                <img src=" Image 2026-10-11 jpeg alt="Profile Picture">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is tanishka, and I am currently learning web development.
+                This is my first portfolio website where I showcase my passion for creating interactive and responsive web pages. 
+                I am a student at KR Mangalam University, pursuing a Bsc degree, and I am deeply interested in technology and 
+                coding. I love exploring new skills every day, and I always aim to improve my knowledge in the field of web
+                development. With a hardworking and consistent mindset, I am determinedto grow as a developer and build creative
+                projects that make a real impact.  
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <p>Beginner</p>
+                </div>
+
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <p>Beginner</p>
+                </div>
+
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <p>Learning</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project-container">
+
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A simple HTML & CSS webpage.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Another anwesome mini project.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="3"
+                          placeholder="Write your message"
+                          required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 tanishka. All rights reserved.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+
+</body>
+</html>
